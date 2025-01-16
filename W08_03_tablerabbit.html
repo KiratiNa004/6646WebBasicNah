@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableRabbit</title>
+    <style>
+         body{
+            font-family: "Kanit" sans-serif;
+            padding: 0px;
+            margin: 0px;
+        } 
+        /* table {
+            width: 100%;
+            border-collapse:collapse ;
+        } */
+        .main1{
+            border-collapse: collapse;
+            width: 100%;
+            /* background-color: black; */
+        }
+        .image{
+            border-spacing: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .menu{
+            vertical-align: top;
+            background-color: #dde0da;
+            width: 20%;
+        }
+        ul{
+            list-style: none;
+            padding: 20px;
+            margin: 0%;
+            line-height: 1.3rem;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(82, 3, 128);
+        }
+        a:hover{
+            color: rgb(0, 204, 255);
+            font-size: 20px;
+        }
+        .imageRabbit{
+            border-radius: 15px;
+            border: 6px solid rgb(167, 192, 181);
+        }
+        .Paragrap {
+            text-align: center;
+            background-color: beige;
+            padding: 20px;
+            margin: 0%;
+        }
+        .Footer{
+            text-align: center;
+            background-color: beige;
+            padding: 20px;
+            margin: 0%;
+            line-height: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- borderคอบ -->
+    <!-- colspanแนวนอน -->
+    <!-- rowspanแนวตั้ง -->
+    <table class="main1"> 
+        <tr>
+            <td colspan="2">
+            <img src="image/menu01.png" alt="Headind" width="100%">    
+        </td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="menu">
+                <ul>
+                    <li><a href="#">ข่าว</a></li>
+                    <li><a href="#">ติดต่อ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">อื่นๆ</a></li>
+                    <li><a href="#">back to Home</a> </li>
+                </ul>
+            </td>
+
+
+            <td>
+                <table class="image" >
+                    <tr>
+                        <td>
+                            <img src="image/1.avif" alt="1" width="300px" class="imageRabbit">
+                        </td>
+                        <td>
+                            <img src="image/1.avif" alt="2" width="300px" class="imageRabbit">
+                        </td>
+                        <td>
+                            <img src="image/1.avif" alt="3" width="300px" class="imageRabbit">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image/1.avif" alt="4" width="300px" class="imageRabbit">
+                        </td>
+                        <td>
+                            <img src="image/1.avif" alt="5" width="300px" class="imageRabbit">
+                        </td>
+                        <td>
+                            <img src="image/1.avif" alt="6" width="300px" class="imageRabbit">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="Paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed eligendi doloribus beatae tempore, cupiditate voluptatum? Porro ullam dicta eligendi. Recusandae, dicta maxime pariatur porro facilis minus incidunt, dolorem iure a minima sunt consequatur ex! Recusandae minima, eum eligendi illo quasi consectetur nisi quibusdam corrupti. Dolorum in praesentium veniam sint.</p>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <P class="Footer">นายกีรติ ประยูรวงศ์ 664230004 66/46 สาขาเทคโนโลยีสารสนเทส<br> 
+                    คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฏนครปฐม<br></P>
+            </td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
