@@ -2,9 +2,11 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(7, 99, 175);
 }
 header {
-  background-color: rgb(20, 230, 177);
+  background-color: rgb(16, 163, 248);
+  margin-bottom: 20px;
 }
 nav {
   display: flex;
@@ -16,6 +18,13 @@ nav {
   display: flex;
   list-style: none;
   gap: 24px;
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
+  }
 }
 .logo-name {
   display: flex;
@@ -41,7 +50,7 @@ nav {
   border: none;
 }
 .btn-secondary {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 255, 255);
   color: rgb(27, 84, 170);
   padding: 8px 16px;
   border-radius: 10px;
@@ -49,9 +58,40 @@ nav {
   border: 1px solid rgb(27, 84, 170);
 }
 
-footer {
-  background-color: rgb(20, 130, 221);
+.btn-primary:hover {
+  background-color: bisque;
 }
+
+.btn-secondary:hover {
+  background-color: bisque;
+}
+
+footer {
+  background-color: rgb(0, 163, 204);
+  height: 100px;
+  /* text-align: center; */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0%;
+}
+
 .container {
-  background-color: rgb(172, 95, 207);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
