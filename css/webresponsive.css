@@ -231,6 +231,21 @@ footer {
   display: none;
 }
 
+.customize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  /* gap: 10px; */
+}
+
+
 /* Responsive for Mobile */
 @media screen and (max-width: 768px) {
   .hamburger-icon {
@@ -265,13 +280,13 @@ footer {
     }
   }
 
-  /* .customize {
+  .customize {
     flex-direction: column;
-  } */
+  }
 
-  /* .support {
+  .support {
     flex-direction: column;
-  } */
+  }
 
   .discover-content {
     grid-template-columns: repeat(1, 1fr);
