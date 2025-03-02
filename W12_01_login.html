@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
-
         body{
             margin: 0;
             padding: 0;
@@ -82,8 +81,25 @@
             color: rgb(18, 183, 233);
             text-decoration: none;
         }
+        @media screen and (max-width :768px) {
+            body{
+                padding: 30px;
+            }
+                .container {
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0 20px;
+                    .left-side{
+                        width: 100%;
+                    }
+                    .right-side{
+                        width: 100%;
+                    }
 
+                }
+            }
     </style>
+
 </head>
 <body>
 
@@ -114,7 +130,6 @@
             <p>Forgot <a href="#">Password?</a></p>
             <p>Don't have an account? <a href="#">Register</a></p>
         </div>
-
     </div>
 
   <script>
