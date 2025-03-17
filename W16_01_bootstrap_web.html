@@ -58,6 +58,15 @@
     .plan-features li .cross {
       color: red;
     }
+
+    .card {
+        width: 100%;
+    }
+    .img-size {
+        width: auto;
+        height: 30px;
+    }
+
     </style>
 
 </head>
@@ -66,7 +75,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container">
         <div class="d-flex align-items-center">
-            <img src="image/Logo-warga.png" alt="" width="24px">
+            <img class="clickable-image"  src="image/Logo-warga.png" alt="" width="24px">
             <a class="navbar-brand ms-2" href="#">Mayomchid</a>
         </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -156,10 +165,9 @@
     
     <!-- Row -->
     <div class="row">
-
         <!-- Column1 -->
         <div class="col-md-4">
-            <div class="card pricing-card p-4 mb-3">
+            <div class="card pricing-card p-4 mb-3 m-auto card-body">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price">$0</p>
                 <p class="text-muted">per month</p>
@@ -175,7 +183,7 @@
         
         <!-- Column2 -->
         <div class="col-md-4">
-            <div class="card pricing-card p-4 mb-3">
+            <div class="card pricing-card p-4 mb-3 m-auto card-body">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price">$29</p>
                 <p class="text-muted">per month</p>
@@ -191,7 +199,7 @@
 
         <!-- Column3 -->
         <div class="col-md-4">
-            <div class="card pricing-card p-4 mb-3">
+            <div class="card pricing-card p-4 mb-3 m-auto card-body">
                 <h3 class="plan-title text-primary">Free Plan</h3>
                 <p class="plan-price">$49</p>
                 <p class="text-muted">per month</p>
@@ -208,6 +216,100 @@
     <!-- End Row -->
  </div>
 
+        <div class="bg-body-secondary mb-2 container-fluid ">
+            <div class="container py-5">
+                <div class="card p-5 m-auto">
+                    <h1 class="text-center text-uppercase text-danger text-bg-dark">member</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel est temporibus nemo autem facilis rerum odit voluptas. Quod, iusto.</p>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="table-dark">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Photo</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider table-responsive">
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td><img  class="img-size img-thumbnail clickable-image" src="image/ก้านกล้วย.jfif" alt="#"></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td><img  class="img-size img-thumbnail clickable-image" src="image/ชบาแก้ว.jpg" alt="#"></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td><img  class="img-size img-thumbnail clickable-image" src="image/แม่ก้านกล้วย.jpg" alt="#"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="col md-6">
+                        <h1 class="text-capitalize">contact us</h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minima fugiat odit perferendis aspernatur rem molestiae fuga ea dolor labore.</p>
+                        <p>Address : Nakhon Pathom,Thailan</p>
+                        Photo : +66 063-2490011
+                    </div>
+                    <div class="col md-6">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                                
+                            </div>
+
+                            <div class="mb-3">       
+                                <label for="exampleInputPassword1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+
+                            <div class="mb-3">       
+                                <label for="exampleInputPassword1" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" row="4"> </textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     <!-- Footer -->
     <div class=" container-fluid bg-dark text-light p-4">
         <p class="text-center">@copyright by Kirati <br>
@@ -218,5 +320,82 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    
+        <!-- SweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script>
+            //โค้ดนี้ใช้ JavaScript เพื่อเลือกทุกองค์ประกอบ <img> ที่มี class="clickable-image" [จะเลือก ทั้ง 3 รูป] และเพิ่ม Event Listener ให้กับแต่ละรูปภาพ เพื่อให้สามารถคลิกแล้วเกิด popup (SweetAlert2) แสดงรูปขยายได้
+
+            document.querySelectorAll(".clickable-image").forEach(img => {   //img แทนแต่ละรูปที่ถูกเลือกในลูป
+                img.addEventListener("click", function() {    //เพิ่มฟังก์ชันให้ แต่ละรูป เมื่อถูกคลิก
+
+                    Swal.fire({
+                        // title: 'Image Preview',
+                        imageUrl: img.src, // ใช้ src ของรูปที่คลิก
+                        imageWidth: 500, // ขนาดรูปที่ขยาย
+                        imageHeight: 'auto',
+                        imageAlt: img.alt, // ใช้ alt ของรูป
+                        // showCloseButton: true,
+                        // confirmButtonText: 'ปิด',
+                        showConfirmButton:true,
+                    });
+                });
+            });
+        </script>
+
+        <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            Swal.fire({
+                title: 'Success!',
+                // text: 'Your message has been sent.',
+
+                //text: 'Your message has been sent.\n\n' +
+                //'Name: ' + name + '\n' +
+                //'Email: ' + email + '\n' +
+                //'Message: ' + message,
+
+                html: `<p>Your message has been sent.</p>
+                <p><b>Name:</b> ${name}</p>
+                <p><b>Email:</b> ${email}</p>
+                <p><b>Message:</b> ${message}</p>`,
+
+
+                icon: 'success',
+                confirmButtonText: 'OK',
+
+
+                //showConfirmButton: false,
+                timer: 3500
+
+
+            }).then(() => {
+                // Optional: Reset form after submission
+                document.getElementById('contactForm').reset();
+            });
+        } else {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please fill out all fields.',
+                icon: 'info',
+                confirmButtonText: 'OK',
+                confirmButtonColor: 'blue',
+                timer: 3500
+            });
+        }
+    });
+</script>
+
 </body>
 </html>
