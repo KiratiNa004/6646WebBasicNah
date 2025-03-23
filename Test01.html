@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <style>
+        .container{
+            background-color: aquamarine;
+            text-align: center;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            ul{
+                text-align: left;
+            }
+        }
+        .container-fluid{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>เปรียบเทียบ</h1>
+    <hr>
+
+    <div class="container">
+        <p>container</p>
+    </div>
+    <hr>
+
+    <div class="container-fluid">
+        <p>container-fluid</p>
+    </div>
+    <hr>
+
+    <!-- เรียนรู้คำสั่ง (class) ของ bootstrap -->
+    <h1>เรียนรู้คำสั่ง (class) ของ bootstrap</h1>
+    
+    <div class="container">
+        <h2>เขียน stylesheet ควบคุมด้วยตนเอง</h2>
+            <ul>
+                <li>background-color : aquamarine</li>
+                <li>text-ailgn : center</li>
+                <li>color : black</li>
+                <li>padding : 20px</li>
+                <li>margin : 20px </li>
+            </ul>
+    </div>
+    
+    <div class="container bg-dark text-light text-start p-5 mt-5">
+        <h2>เขียน stylesheet ควบคุมด้วย bootstrap</h2>
+        <ul>
+            <li>background-color ==> bg-dark</li>
+            <li>text-ailgn ==> text-start</li>
+            <li>color ==> text-light</li>
+            <li>padding ==> p-5</li>
+            <li>margin ==> mt-5 </li>
+        </ul>
+    </div>
+    <hr>
+
+    <!--Grid-->
+    <div class="container-fluid bg-dark text-light text-center p-1">
+        <h3>Grid Basic</h3>
+        <p>แบ่งคอลัมน์</p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-4 bg-warning">Monday</div>
+        <div class="col-4 bg-danger">Tuesday</div>
+        <div class="col-4 bg-success">wednesday</div>
+    </div>
+
+
+
+
+
+    
+   
+
+
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
